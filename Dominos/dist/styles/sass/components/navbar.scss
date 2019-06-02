@@ -1,0 +1,17 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 7rem;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__item {
+        color: $color-white;
+    }
+}

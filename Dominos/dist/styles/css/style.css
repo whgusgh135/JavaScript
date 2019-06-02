@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: url(../img/bg-tiled.jpg), linear-gradient(to bottom, #000000, #ffffff);
+  background-repeat: repeat;
+  background-size: 536px 439px !important;
+  min-height: 100vh;
+  width: 100vw; }
+
+.container {
+  margin: 3rem 15rem;
+  display: flex;
+  flex-direction: column; }
+
+.cart {
+  background-color: blue; }
+
+.detail {
+  background-color: yellow;
+  grid-area: detail; }
+
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center; }
+  .navbar__icon {
+    width: 7rem; }
+  .navbar__menu {
+    display: flex; }
+  .navbar__item {
+    color: #ffffff; }
+
+.menu {
+  background-color: red; }
