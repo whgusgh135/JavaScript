@@ -1,0 +1,32 @@
+.ads {
+    margin-top: 4.5rem;
+    width: $container-width;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 3;
+
+    &__box {
+        width: 54.5rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__dot-container {
+        width: $container-width;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__dot {
+        background-color: $color-white;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        margin: auto .4rem;
+    }
+}
