@@ -23,9 +23,11 @@ body {
 }
 
 .container {
+    width: $container-width;
     margin: 0rem 15rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .shade {
