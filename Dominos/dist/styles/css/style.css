@@ -20,9 +20,11 @@ body {
   width: 100vw; }
 
 .container {
+  width: 109.5rem;
   margin: 0rem 15rem;
   display: flex;
-  flex-direction: column; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .shade {
   position: absolute;
@@ -31,10 +33,197 @@ body {
   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
 
 .cart {
-  background-color: blue; }
+  background-color: #ffffff;
+  width: 28rem;
+  height: 43rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column; }
+  .cart__voucher {
+    height: 20%;
+    background-color: #E7E7E7;
+    position: relative; }
+    .cart__voucher::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1rem;
+      width: 100%;
+      height: 1rem;
+      background: linear-gradient(45deg, transparent 33.333%, #E7E7E7 33.333%, #E7E7E7 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #E7E7E7 33.333%, #E7E7E7 66.667%, transparent 66.667%);
+      background-size: 1rem 2rem; }
+  .cart__voucher-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    margin-left: 2rem; }
+  .cart__voucher-form {
+    margin: 1rem 2rem; }
+  .cart__voucher-input {
+    height: 2.8rem;
+    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid #9F9F9F;
+    border-radius: .3rem;
+    padding-left: .5rem; }
+  .cart__voucher-btn {
+    width: 6rem;
+    height: 2.8rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: .3rem;
+    background-color: #E21A39;
+    margin: .3rem; }
+  .cart__order {
+    height: 80%;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 1rem; }
+    .cart__order::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1rem;
+      width: 100%;
+      height: 1rem;
+      background: linear-gradient(-45deg, transparent 1rem, #ffffff 0), linear-gradient(45deg, transparent 1rem, #ffffff 0);
+      background-repeat: repeat-x;
+      background-position: left bottom;
+      background-size: 1rem 2rem; }
+  .cart__order-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-left: 1rem; }
+  .cart__order-detail--empty {
+    margin: 1.5rem 2rem 3rem 2rem;
+    color: #9F9F9F;
+    font-size: 1.2rem; }
+  .cart__order-detail--box {
+    margin: .5rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    border-bottom: 1px dotted #000000; }
+  .cart__order-detail--name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 18rem;
+    letter-spacing: .2rem; }
+  .cart__order-detail--price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 6rem;
+    text-align: right; }
+  .cart__order-detail--del-btn {
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    padding: .2rem .5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem; }
+  .cart__order-detail--edit-btn {
+    text-transform: uppercase;
+    background-color: #3B7B90;
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    padding: .2rem .5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem; }
+  .cart__order-total {
+    margin: 1rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 700; }
+    .cart__order-total--total {
+      text-transform: uppercase; }
+    .cart__order-total--amount {
+      color: #3B7B90; }
+  .cart__order-btn {
+    width: 5rem;
+    height: 3.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: .3rem;
+    background-color: #04AE48;
+    margin: .3rem; }
+  .cart__order-btn-space {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1rem 2rem;
+    padding: .5rem 0rem;
+    border-top: 1px dotted #000000;
+    border-bottom: 1px dotted #000000; }
+  .cart__order-location {
+    margin: 0rem 2rem;
+    font-size: 1.2rem; }
+    .cart__order-location--bold {
+      text-transform: uppercase;
+      font-weight: 700; }
+    .cart__order-location--cap {
+      text-transform: uppercase; }
 
 .detail {
-  background-color: yellow; }
+  width: 77.6rem;
+  display: flex;
+  justify-content: space-between; }
+  .detail__img {
+    width: 45rem;
+    height: 30rem;
+    object-fit: cover; }
+  .detail__form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .detail__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: .5rem; }
+  .detail__price {
+    font-size: 1.4rem;
+    margin-bottom: .5rem; }
+  .detail__description {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8rem; }
+  .detail__choice {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: .3rem;
+    font-size: 1.4rem; }
+  .detail__qty {
+    width: 8rem;
+    height: 3.5rem;
+    border-radius: .3rem;
+    border: 1px solid #E7E7E7;
+    margin: 0rem;
+    padding-left: 1rem; }
+  .detail__btn {
+    margin-left: .7rem;
+    width: 21rem;
+    height: 3.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: .3rem;
+    background-color: #E21A39; }
 
 .navbar {
   display: flex;
@@ -102,7 +291,7 @@ body {
     margin: auto .4rem; }
 
 .menu {
-  width: 109.5rem;
+  width: 77.6rem;
   margin: 3rem 0rem;
   color: #ffffff; }
   .menu__container {
@@ -117,7 +306,7 @@ body {
     margin-bottom: 1rem;
     width: 100%; }
   .menu__img {
-    width: 20rem; }
+    width: 19rem; }
   .menu__name {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -128,14 +317,14 @@ body {
     flex-wrap: wrap;
     align-items: center;
     margin: .3rem;
-    width: 19.6rem;
+    width: 18rem;
     line-height: 1.6rem; }
   .menu__price {
     font-size: 1.4rem;
     margin: .3rem;
     margin-bottom: 2rem; }
   .menu__btn {
-    width: 19.6rem;
+    width: 18rem;
     height: 2.8rem;
     text-transform: uppercase;
     color: #ffffff;

@@ -1,5 +1,5 @@
 .menu {
-    width: $container-width;
+    width: 77.6rem;
     margin: 3rem 0rem;
     color: $color-white;
 
@@ -21,7 +21,7 @@
     }
 
     &__img {
-        width: 20rem;
+        width: 19rem;
     }
 
     &__name {
@@ -34,7 +34,7 @@
         flex-wrap: wrap;
         align-items: center;
         margin: .3rem;
-        width: 19.6rem;
+        width: 18rem;
         line-height: 1.6rem;
     }
 
@@ -45,7 +45,7 @@
     }
 
     &__btn {
-        width: 19.6rem;
+        width: 18rem;
         height: 2.8rem;
         text-transform: uppercase;
         color: $color-white;

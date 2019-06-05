@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/style.css">
     <link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
     <title>Pizza - Domino's Online Ordering</title>
@@ -46,7 +47,6 @@
                     New Yorker Range
                 </div>
                 <div class="menu__box">
-                    
                     <img class="menu__img" src="styles/img/NZ_P325_en_menu_3179.png" alt="">
                     
                     <div class="menu__name">The Big Philly Cheese Steak</div>
@@ -54,21 +54,125 @@
                     <button class="menu__btn">Select</button>
                 </div>
                 <div class="menu__box">
-                    <img class="menu__img" src="styles/img/NZ_P325_en_menu_3179.png" alt="">
+                    <img class="menu__img" src="styles/img/NZ_P321_en_menu_3179.png" alt="">
                     
                     <div class="menu__name">The Big Three Meats</div>
                     <div class="menu__price">From $18.90*</div>
                     <button class="menu__btn">Select</button>
                 </div>
+                <div class="menu__box">
+                    <img class="menu__img" src="styles/img/NZ_P322_en_menu_3179.png" alt="">
+                    
+                    <div class="menu__name">The Big Ham & Pineapple</div>
+                    <div class="menu__price">From $18.00*</div>
+                    <button class="menu__btn">Select</button>
+                </div>
+                <div class="menu__box">
+                    <img class="menu__img" src="styles/img/NZ_P316_en_menu_3179.png" alt="">
+                    
+                    <div class="menu__name">The Big Pepperoni</div>
+                    <div class="menu__price">From $18.00*</div>
+                    <button class="menu__btn">Select</button>
+                </div>
+
+                <div class="detail">
+                    <img class="detail__img" src="styles/img/NZ_P325_en_menu_3179.png" alt="">
+      
+                    <form class="detail__form">
+                        <div class="detail__form-box">  
+                            <div class="detail__title">
+                                The Big Philly Cheese Steak
+                            </div>
+                            <div class="detail__price">
+                                $18.90
+                            </div>
+                            <div class="detail__description">
+                                Huge pie cut into 8 extra-large slices topped with tender steak, mushrooms, red onion and capsicum on a creamy cheese sauce base
+                            </div>
+                        </div>
+                     
+                        <div class="detail__form-box">
+                            <div class="detail__title">
+                                Current Sauce
+                            </div>
+                            <select class="detail__choice">
+                                <option value="creamy">Creamy Liquid Cheese</option>
+                                <option value="barbeque">Barbeque Sauce</option>
+                                <option value="pizza">Pizza Sauce</option>
+                                <option value="no">No Sauce</option>                            
+                            </select>
+                        </div>
+
+                        <div class="detail__form-box">
+                            <div class="detail__title">
+                                QTY
+                            </div>
+                            <input class="detail__qty" type="number" value="1">
+                            <button class="detail__btn" type="submit">
+                                Add to Order
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
         </div>
     
-        <div class="detail">
-            detail
-        </div>
+        
     
         <div class="cart">
-            cart
+            <div class="cart__voucher">
+                <div class="cart__voucher-title">
+                    Enter Voucher Code Here
+                </div>
+                <form class="cart__voucher-form">
+                    <input type="text" class="cart__voucher-input" placeholder="Voucher code">
+                    <button type="submit" class="cart__voucher-btn">Apply</button>
+                </form>
+            </div>
+            <div class="cart__order">
+                <div class="cart__order-title">
+                    Order details
+                </div>
+                <div class="cart__order-detail">
+                    <div class="cart__order-detail--empty">
+                        Your order is currently empty
+                    </div>
+
+                    <!-- <div class="cart__order-detail--box">
+                        <div class="cart__order-detail--name">
+                            <span class="cart__order-detail--qty">1</span> X The Big Philly Cheese Steak
+                        </div>
+                        <div class="cart__order-detail--price">$18.90</div>
+                        <button class="cart__order-detail--del-btn">Remove</button>
+                        <button class="cart__order-detail--edit-btn">Edit</button>
+                    </div> -->
+                </div>
+
+                <div class="cart__order-total">
+                    <div class="cart__order-total--total">
+                        Total
+                    </div>
+                    <div class="cart__order-total--amount">
+                        $0.00
+                    </div>
+                </div>
+
+                <div class="cart__order-btn-space">
+                    <button class="cart__order-btn">
+                        Next
+                    </button>
+                </div>
+                
+
+                <div class="cart__order-location">
+                    <p class="cart__order-location--bold">Pick up from</p>
+                    <p class="cart__order-location--cap">Auckland City Store</p>
+                    <p class="cart__order-location--normal">09 377 1580</p>
+                    <p class="cart__order-location--normal">5/205 Queen Street</p>
+                    <p class="cart__order-location--cap">Auckland City, NZ</p>                
+                </div>
+            </div>
         </div>
     </div>
 

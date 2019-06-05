@@ -1,3 +1,207 @@
 .cart {
-    background-color: blue;
+    background-color: $color-white;
+    width: 28rem;
+    height: 43rem;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &__voucher {
+        height: 20%;
+        background-color: $color-grey;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -1rem;
+            width: 100%;
+            height: 1rem;
+            background:
+                linear-gradient(
+                    45deg, transparent 33.333%,
+                    $color-grey 33.333%, $color-grey 66.667%,
+                    transparent 66.667%
+                ),
+                linear-gradient(
+                    -45deg, transparent 33.333%,
+                    $color-grey 33.333%, $color-grey 66.667%,
+                    transparent 66.667%
+                );
+            background-size: 1rem 2rem;
+        }
+    }
+
+    &__voucher-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+        margin-left: 2rem;
+    }
+
+    &__voucher-form {
+        margin: 1rem 2rem;
+    }
+
+    &__voucher-input {
+        height: 2.8rem;
+        font-size: 1.4rem;
+        font-family: 'Oswald', sans-serif;
+        border: 1px solid $color-grey-dark;
+        border-radius: .3rem;
+        padding-left: .5rem;
+    }
+
+    &__voucher-btn {
+        width: 6rem;
+        height: 2.8rem;
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 1.4rem;
+        font-family: 'Oswald', sans-serif;
+        border: none;
+        border-radius: .3rem;
+        background-color: $color-select;
+        margin: .3rem;
+    }
+
+    &__order {
+        height: 80%;
+        background-color: $color-white;
+        position: relative;
+        padding-top: 1rem;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -1rem;
+            width: 100%;
+            height: 1rem;
+            background: 
+					linear-gradient(-45deg, transparent 1rem, $color-white 0), 
+					linear-gradient(45deg, transparent 1rem, $color-white  0);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 1rem 2rem;
+        }
+    }
+
+    &__order-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        margin-left: 1rem;
+    }
+
+    &__order-detail {
+
+        &--empty {
+            margin: 1.5rem 2rem 3rem 2rem;
+            color: $color-grey-dark;
+            font-size: 1.2rem;
+        }
+
+        &--box {
+            margin: .5rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            text-transform: uppercase;
+            border-bottom: 1px dotted $color-black;
+        }
+
+        &--name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            width: 18rem;
+            letter-spacing: .2rem;
+        }
+
+        &--price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            width: 6rem;
+            text-align: right;
+        }
+
+        &--del-btn {
+            text-transform: uppercase;
+            background-color: $color-black;
+            color: $color-white;
+            border: none;
+            font-size: 1.1rem;
+            padding: .2rem .5rem;
+            margin-right: .5rem;
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        &--edit-btn {
+            text-transform: uppercase;
+            background-color: $color-price;
+            color: $color-white;
+            border: none;
+            font-size: 1.1rem;
+            padding: .2rem .5rem;
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    &__order-total {
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        font-weight: 700;
+
+        &--total {
+            text-transform: uppercase;
+        }
+
+        &--amount {
+            color: $color-price;
+        }
+    }
+
+    &__order-btn {
+        width: 5rem;
+        height: 3.4rem;
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 1.8rem;
+        font-family: 'Oswald', sans-serif;
+        border: none;
+        border-radius: .3rem;
+        background-color: $color-next;
+        margin: .3rem;
+    }
+
+    &__order-btn-space {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 1rem 2rem;
+        padding: .5rem 0rem;
+        border-top: 1px dotted $color-black;
+        border-bottom: 1px dotted $color-black;
+    }
+
+    &__order-location {
+        margin: 0rem 2rem;
+        font-size: 1.2rem;
+
+        &--bold {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        &--cap {
+            text-transform: uppercase;
+        }
+    }
 }
