@@ -24,7 +24,8 @@ body {
   margin: 0rem 15rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: flex-start; }
 
 .shade {
   position: absolute;
@@ -35,12 +36,11 @@ body {
 .cart {
   background-color: #ffffff;
   width: 28rem;
-  height: 43rem;
   margin-top: 5rem;
   display: flex;
   flex-direction: column; }
   .cart__voucher {
-    height: 20%;
+    height: 8.6rem;
     background-color: #E7E7E7;
     position: relative; }
     .cart__voucher::after {
@@ -77,9 +77,9 @@ body {
     border: none;
     border-radius: .3rem;
     background-color: #E21A39;
-    margin: .3rem; }
+    margin: .3rem;
+    cursor: pointer; }
   .cart__order {
-    height: 80%;
     background-color: #ffffff;
     position: relative;
     padding-top: 1rem; }
@@ -87,9 +87,9 @@ body {
       content: "";
       display: block;
       position: absolute;
-      bottom: -1rem;
+      bottom: -2rem;
       width: 100%;
-      height: 1rem;
+      height: 2rem;
       background: linear-gradient(-45deg, transparent 1rem, #ffffff 0), linear-gradient(45deg, transparent 1rem, #ffffff 0);
       background-repeat: repeat-x;
       background-position: left bottom;
@@ -129,7 +129,8 @@ body {
     padding: .2rem .5rem;
     margin-right: .5rem;
     margin-top: .5rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    cursor: pointer; }
   .cart__order-detail--edit-btn {
     text-transform: uppercase;
     background-color: #3B7B90;
@@ -138,7 +139,8 @@ body {
     font-size: 1.1rem;
     padding: .2rem .5rem;
     margin-top: .5rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    cursor: pointer; }
   .cart__order-total {
     margin: 1rem 2rem 1rem 2rem;
     display: flex;
@@ -223,7 +225,8 @@ body {
     font-weight: 700;
     border: none;
     border-radius: .3rem;
-    background-color: #E21A39; }
+    background-color: #E21A39;
+    cursor: pointer; }
 
 .navbar {
   display: flex;
@@ -246,13 +249,36 @@ body {
     height: 4rem;
     display: flex;
     align-items: center;
-    justify-content: center; }
-    .navbar__item:hover {
+    justify-content: center;
+    cursor: pointer; }
+    .navbar__item--active {
+      position: relative;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 1.6rem;
       background-color: #00678E;
+      width: 20rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+      .navbar__item--active::after {
+        content: "";
+        position: absolute;
+        bottom: -.6rem;
+        width: 0;
+        height: 0;
+        left: 50%;
+        border-left: .6rem solid transparent;
+        border-top: 0.6rem solid #00678E;
+        border-right: .6rem solid transparent;
+        z-index: 5; }
+    .navbar__item:hover {
+      background-color: #0277A6;
       z-index: 5; }
-    .navbar__item:hover::after {
-      top: 0;
-      border-left: 0.6rem solid #00678E; }
+    .navbar__item:not(:last-child):hover::after {
+      border-left: 0.6rem solid #0277A6; }
     .navbar__item:not(:last-child)::after {
       content: "";
       position: absolute;
@@ -284,11 +310,13 @@ body {
     justify-content: center;
     align-items: center; }
   .ads__dot {
-    background-color: #ffffff;
+    background-color: #A99692;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
     margin: auto .4rem; }
+    .ads__dot--active {
+      background-color: #ffffff; }
 
 .menu {
   width: 77.6rem;
@@ -298,7 +326,15 @@ body {
     display: flex;
     flex-wrap: wrap; }
   .menu__box {
-    margin: 3rem .2rem; }
+    margin: 3rem .2rem;
+    text-decoration: none;
+    color: #ffffff; }
+    .menu__box:hover .menu__img {
+      transform-origin: 50% 100%;
+      transform: scale(1.1); }
+    .menu__box:hover .menu__name {
+      transform-origin: 50% 100%;
+      transform: scale(1.1); }
   .menu__title {
     text-transform: uppercase;
     font-size: 3.2rem;
@@ -306,7 +342,8 @@ body {
     margin-bottom: 1rem;
     width: 100%; }
   .menu__img {
-    width: 19rem; }
+    width: 19rem;
+    transition: all .05s ease-in; }
   .menu__name {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -333,4 +370,5 @@ body {
     border: none;
     border-radius: .3rem;
     background-color: #E21A39;
-    margin: .3rem; }
+    margin: .3rem;
+    cursor: pointer; }

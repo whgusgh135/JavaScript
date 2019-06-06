@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "watch:sass": "node-sass dist/styles/sass/main.scss dist/styles/css/style.css"
@@ -12,11 +13,13 @@
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
-    "webpack": "^4.32.2"
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.6.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0"
