@@ -1,14 +1,13 @@
 .cart {
     background-color: $color-white;
     width: 28rem;
-    height: 43rem;
     margin-top: 5rem;
 
     display: flex;
     flex-direction: column;
 
     &__voucher {
-        height: 20%;
+        height: 8.6rem;
         background-color: $color-grey;
         position: relative;
 
@@ -66,10 +65,10 @@
         border-radius: .3rem;
         background-color: $color-select;
         margin: .3rem;
+        cursor: pointer;
     }
 
     &__order {
-        height: 80%;
         background-color: $color-white;
         position: relative;
         padding-top: 1rem;
@@ -78,9 +77,9 @@
             content: "";
             display: block;
             position: absolute;
-            bottom: -1rem;
+            bottom: -2rem;
             width: 100%;
-            height: 1rem;
+            height: 2rem;
             background: 
 					linear-gradient(-45deg, transparent 1rem, $color-white 0), 
 					linear-gradient(45deg, transparent 1rem, $color-white  0);
@@ -138,6 +137,7 @@
             margin-right: .5rem;
             margin-top: .5rem;
             margin-bottom: 1rem;
+            cursor: pointer;
         }
 
         &--edit-btn {
@@ -149,6 +149,7 @@
             padding: .2rem .5rem;
             margin-top: .5rem;
             margin-bottom: 1rem;
+            cursor: pointer;
         }
     }
 
