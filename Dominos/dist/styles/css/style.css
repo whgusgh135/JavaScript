@@ -17,11 +17,12 @@ body {
   background-repeat: repeat;
   background-size: 536px 439px !important;
   min-height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
 
 .container {
   width: 109.5rem;
-  margin: 0rem 15rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -29,7 +30,7 @@ body {
 
 .shade {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 30rem;
   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
 

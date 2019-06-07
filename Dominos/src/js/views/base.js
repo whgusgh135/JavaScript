@@ -20,7 +20,7 @@ export const data = [
         title: "The Big Three Meats",
         price: 18.90,
         desc: "Huge pie cut into 8 extra-large slices. Authentic soft and foldable New York style dough topped with pepperoni, ground beef & Italian sausage",
-        sauce: ["Pizza Sauce", "Creamy Liquid Cheese", "Barbeque Sauce", "No Sauce"],
+        sauce: ["Creamy Liquid Cheese", "Barbeque Sauce", "Pizza Sauce", "No Sauce"],
         qty: 1
     },
     {
@@ -28,7 +28,7 @@ export const data = [
         title: "The Big Ham & Pineapple",
         price: 18.00,
         desc: "Huge pie cut into 8 extra-large slices. Authentic soft and foldable New York style dough topped with ham & pineapple",
-        sauce: ["Pizza Sauce", "Creamy Liquid Cheese", "Barbeque Sauce", "No Sauce"],
+        sauce: ["Creamy Liquid Cheese", "Barbeque Sauce", "Pizza Sauce", "No Sauce"],
         qty: 1
     },
     {
@@ -36,7 +36,7 @@ export const data = [
         title: "The Big Pepperoni",
         price: 18.00,
         desc: "Huge pie cut into 8 extra-large slices. Authentic soft and foldable New York style dough topped with tasty pepperoni & mozzarella",
-        sauce: ["Pizza Sauce", "Creamy Liquid Cheese", "Barbeque Sauce", "No Sauce"],
+        sauce: ["Creamy Liquid Cheese", "Barbeque Sauce", "Pizza Sauce", "No Sauce"],
         qty: 1
     }
 ];

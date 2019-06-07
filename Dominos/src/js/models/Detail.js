@@ -15,7 +15,6 @@ export default class Detail {
             this.desc = res.desc;
             this.sauce = res.sauce;
             this.qty = res.qty;
-            this.toppings = res.toppings;
 
         } catch(error) {
             alert(error);
